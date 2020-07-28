@@ -1,82 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ProGrad</title>
-  </head>
 
-  <body>
-    <nav>
-      <ul>
-        <li>ProGrad</li>
-      </ul>
-      <ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProGrad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li class="logo_text">ProGrad</li>
+      <li>
         <ul>
-          <li>HOME</li>
-          <li>BIO</li>
-          <li>PORTFOLIO</li>
-          <li>SKILLS</li>
-          <li>CONTACT</li>
+          <li><a href="#home" class="nav_link">HOME</a></li>
+          <li><a href="#bio" class="nav_link">BIO</a></li>
+          <li><a href="#portfolio" class="nav_link">PORTFOLIO</a></li>
+          <li><a href="#skills" class="nav_link">SKILLS</a></li>
+          <li><a href="#contact" class="nav_link link_button">CONTACT</a></li>
         </ul>
-      </ul>
-    </nav>
-    <header>
-      <div>
-        <p>I BELIEVE IN</p>
-        <h1>EAT();CODE();SLEEP();REPEAT();</h1>
-      </div>
-    </header>
-    <section>
-      <img src="" alt="logo" />
+      </li>
+    </ul>
+  </nav>
+  <header id="home">
+    <div>
+      <p>I BELIEVE IN</p>
+      <h1>EAT (); CODE (); SLEEP (); REPEAT ();</h1>
+    </div>
+  </header>
+  <section id="bio">
+    <img src="./assets/priya.jpg" alt="logo" />
+    <article>
+      <h2>Priya Bolla</h2>
+      <p>
+        I am pursuaing my btech in the stream of computer science.As I want to
+        utilise this lockdown period,I am going through this front end
+        development bootcamp.
+        <span class="break"></span>
+        I have knowledges on languages like C,C++,Java,Python,Html,Css,JavaScript.I am very passionate to
+        learn full stack course.
+        <span class="break"></span>
+        I have uploaded all my projects in my github account.
+      </p>
+      <a href=".assets/priya_resume.pdf" class="link_button">Download My Resume</a>
+    </article>
+  </section>
+  <section id="portfolio">
+    <h3>Portfolio</h3>
+    <p>Some of my best projects so far</p>
+    <hr />
+    <div>
       <article>
-        <h2>Priya Bolla</h2>
-        <p>
-          I am pursuaing my btech in the stream of computer science.As I want to
-          utilise this lockdown period,I am going through this front end
-          development bootcamp.I am very passionate to learn full stack course.
-        </p>
-        <a href="">Download My Resume</a>
+        <img src="./assets/Coding-icon.svg" alt="icon" />
+        <h4>PERSONAL BLOG</h4>
+        <p>A blog where i pen my own thoughts on programming</p>
       </article>
-    </section>
-    <section>
-      <h3>Portfolio</h3>
-      <p>Some of my best projects so far</p>
-      <hr />
-      <div>
-        <article>
-          <img src="" alt="icon" />
-          <h4>PERSONAL BLOG</h4>
-          <p>A blog where i pen my own thoughts on programming</p>
-        </article>
-        <article>
-          <img src="" alt="icon" />
-          <h4>TIC TAC TOE</h4>
-          <p>Complete TIC TAC TOE along with GUI using java</p>
-        </article>
-        <article>
-          <img src="" alt="icon" />
-          <h4>TIME TABLE GENERATOR</h4>
-          <p>A web application for automatic time table generator</p>
-        </article>
-      </div>
-    </section>
-    <section>
-      <h3>SKILLS</h3>
+      <article>
+        <img src="./assets/Coding-icon.svg" alt="icon" />
+        <h4>TIC TAC TOE</h4>
+        <p>Complete TIC TAC TOE along with GUI using java</p>
+      </article>
+      <article>
+        <img src="./assets/Coding-icon.svg" alt="icon" />
+        <h4>TIME TABLE GENERATOR</h4>
+        <p>A web application for automatic time table generator</p>
+      </article>
+    </div>
+  </section>
+  <section id="skills">
+    <h3>SKILLS</h3>
+    <div id="skills-container">
       <div>
         <h4>TECHNICAL SKILLS</h4>
         <div>
           <ul>
             <li>HTML</li>
-            <li><progress></progress></li>
+            <li><progress value=75 max=100></li>
             <li>CSS</li>
-            <li><progress></progress></li>
+            <li><progress value=75 max=100></li>
             <li>JAVA</li>
-            <li><progress></progress></li>
+            <li><progress value=75 max=100></li>
             <li>JAVASCRIPT</li>
-            <li><progress></progress></li>
+            <li><progress value=75 max=100></li>
             <li>ANGULAR</li>
-            <li><progress></progress></li>
+            <li><progress value=45 max=100></li>
           </ul>
         </div>
       </div>
@@ -85,23 +93,25 @@
         <div>
           <ul>
             <li>ENGLISH</li>
-            <li><progress></progress></li>
-            <li>KANNADA</li>
-            <li><progress></progress></li>
+            <li><progress value=75 max=100></li>
+            <li>TELUGU</li>
+            <li><progress value=95 max=100></li>
             <li>HINDI</li>
-            <li><progress></progress></li>
+            <li><progress value=55 max=100></li>
           </ul>
         </div>
       </div>
-    </section>
-    <footer>
-      <h3>CONTACT</h3>
-      <form action="">
-        <input type="text" placeholder="ENTER YOUR NAME" /><br />
-        <input type="text" placeholder="ENTER YOUR EMAIL" /><br />
-        <input type="text" placeholder="ENTER YOUR MESSAGE" /><br />
-        <input type="submit" value="Send Message" />
-      </form>
-    </footer>
-  </body>
+    </div>
+  </section>
+  <footer id="contact">
+    <h3>CONTACT</h3>
+    <form action="">
+      <input type="text" class="input" placeholder="ENTER YOUR NAME" />
+      <input type="text" class="input" placeholder="ENTER YOUR EMAIL" />
+      <input type="text" class="input" placeholder="ENTER YOUR MESSAGE" />
+      <input type="submit" class="link_button" value="Send Message" />
+    </form>
+  </footer>
+</body>
+
 </html>
